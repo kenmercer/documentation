@@ -1,0 +1,13 @@
+using github
+fork tasmota which will duplicate it to me@github
+git clone the fork
+make changes
+commit the changes then push back to me@github
+
+merging updates
+should already have a              remote origin
+git remote add <name> <url> to get remote upstream
+
+git pull upstream
+git add <any files which have changed>
+git commit
