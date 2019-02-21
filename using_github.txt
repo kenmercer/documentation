@@ -11,3 +11,41 @@ git remote add <name> <url> to get remote upstream
 git pull upstream
 git add <any files which have changed>
 git commit
+
+Basic setup (From Jessica):
+
+git clone https://github.com/me/reponame
+cd reponame
+git remote add upstream https://github.com/upstream/reponame
+
+For the simple case of updating your fork to match upstream:
+
+git pull upstream --ff-only # this ensures you’re not creating a merge commit
+git push # will default to origin, your repo
+
+When making local changes:
+
+# make your changes
+git add <list of modified files>
+git commit # will open an editor for you to add commit message
+# to push to GitHub
+git push
+
+When pulling in changes from upstream, you’ll need to either merge or rebase. Many prefer rebase, where git will rewind your history, apply all commits from upstream, then replay your changes on top. Merge is a bit more complicated, personally I’ve never used.
+
+git pull upstream --rebase # for what I described above, otherwise will do a merge
+# if there are merge conflicts, git will tell you what files these are, can check with `git status` and use `git diff`
+# edit affected files, choosing the changes you want, remove merge markers (>>>>>, ===== and <<<<< IIRC)
+
+git add <list of affected files>
+git commit
+# can push to GitHub now…
+git push
+
+If at any stage you want to undo your changes to a file, the easiest way is with:
+
+git checkout -- <filename>
+
+which will reset the file to HEAD. This cannot be undone :p
+
+Anything more complex, GitHub’s documentation is usually pretty stellar :) Hopefully I have all the commands correct, I usually use `git <subcommand> --help` when I’m stuck on argument order, etc. Hard to remember it all!
