@@ -1,3 +1,10 @@
+
+ken@ken-ubuntu2:~/Dropbox/MTSC KM/Lodge Monitor/VisualStudio/Sonoff-Tasmota$ git add sonoff/user_config_override.h
+The following paths are ignored by one of your .gitignore files:
+sonoff/user_config_override.h
+Use -f if you really want to add them.
+
+
 using github
 fork tasmota which will duplicate it to me@github
 git clone the fork
