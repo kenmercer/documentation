@@ -57,3 +57,6 @@ git checkout -- <filename>
 which will reset the file to HEAD. This cannot be undone :p
 
 Anything more complex, GitHub’s documentation is usually pretty stellar :) Hopefully I have all the commands correct, I usually use `git <subcommand> --help` when I’m stuck on argument order, etc. Hard to remember it all!
+
+# Git clone particular version
+https://stackoverflow.com/questions/3555107/git-clone-particular-version-of-remote-repository
