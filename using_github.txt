@@ -60,3 +60,5 @@ Anything more complex, GitHub’s documentation is usually pretty stellar :) Hop
 
 # Git clone particular version
 https://stackoverflow.com/questions/3555107/git-clone-particular-version-of-remote-repository
+
+I'm merging the cloud code into mine. Ran git stash then git pull
